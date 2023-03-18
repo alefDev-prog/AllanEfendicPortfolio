@@ -5,10 +5,16 @@
     padding:0;
 }
 
+:root {
+    --blue-color: rgb(46, 95, 229);
+    --header-color: rgb(23, 24, 23);
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 body {
@@ -21,7 +27,7 @@ body {
     position: fixed;
     width: 100%;
     display:flex;
-    background-color: transparent;
+    background-color: var(--header-color);
     border-bottom:1px solid rgb(38, 37, 37);
     justify-content: flex-end;
 }
@@ -42,11 +48,12 @@ body {
 
 #nav-bar ul a {
     text-decoration: none;
-    color: rgb(46, 95, 229);
+    color: var(--blue-color);
     font-size: 2rem;
 
 }
 
 .section {
     height: 100vh;
+    padding-top: 50px;
 }
