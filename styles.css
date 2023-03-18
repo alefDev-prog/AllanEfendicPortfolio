@@ -85,19 +85,34 @@ body {
 
 #information-section .accordion-title {
     font-size: 3rem;
-}
-
-#information-section .accordion-text {
-    padding-top:2rem;
-    font-size: 1.8rem;
-}
-
-#information-section .accordion-text p {
-    padding-top:0.5rem;
+    cursor: pointer;
 }
 
 #information-section .accordion-title::after {
     content:"+";
     margin-left:4rem;
     cursor:pointer;
+}
+
+
+#information-section .accordion-text {
+    font-size: 1.8rem;
+    overflow: hidden;
+    height: 0px;
+    transition: 0.5s;
+}
+
+#information-section .accordion-text p {
+    padding-top:0.5rem;
+}
+
+/* Javascript expansion */
+
+#information-section .active {
+    padding-top:2rem;
+    height:200px;
+}
+
+#information-section .minus::after{
+    content:'-';
 }
