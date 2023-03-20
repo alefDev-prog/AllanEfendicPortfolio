@@ -29,6 +29,7 @@ body {
 
 #header {
     position: fixed;
+    top:0;
     width: 100%;
     display:flex;
     background-color: var(--header-color);
@@ -147,19 +148,23 @@ body {
     margin-top: 15rem;
     display: flex;
     justify-content: space-evenly;
+    perspective: 500px;
 }
 
 #contact-section .wide-container .icon-container {
     z-index: 2;
     transform-style: preserve-3d;
-    box-shadow: 0px 10px 20px rgb(3, 2, 88);
-    perspective: 500px;
+    box-shadow: 0px 10px 20px var(--blue-color);
+    transition: all 0.5s ease;
+    border: 10px solid transparent;
+    
 }
 
 #contact-section .wide-container .icon {
     font-size: 10rem;
     z-index: 3;
     pointer-events: none;
+    color: var(--blue-color);
     
 
     

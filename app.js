@@ -39,16 +39,35 @@ const icons = document.querySelectorAll(".icon-container");
 icons.forEach(icon => {
     icon.addEventListener('mousemove', event => {
        
-           
-        let X = (event.offsetX-icon.clientWidth/2)/2;
-        let Y = (event.offsetY-icon.clientHeight/2)/2;
+         
+        let X = (event.offsetX-icon.clientWidth/2)/2.5;
+        let Y = (event.offsetY-icon.clientHeight/2)/2.5;
         console.log(`X: ${X}`);
         console.log(`Y: ${Y}`);
-        event.target.style.transform = `rotateY(${X}deg) rotateX(${Y}deg)`;
+        event.target.style.transform = `rotateY(${X}deg) rotateX(${-Y}deg)`;
         event.stopPropagation();
+        
+       console.log(event.target)
+       event.stopPropagation();
     
     },);
 });
+
+//mouse enters
+icons.forEach(icon => {
+    icon.addEventListener('mouseenter', event => {
+        event.target.style.transition = "none";
+    })
+})
+
+
+//mouse leaves
+icons.forEach(icon => {
+    icon.addEventListener('mouseleave', event => {
+        event.target.style.transition = "all 0.5s ease";
+        event.target.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    })
+})
 
 
 
