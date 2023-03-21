@@ -1,18 +1,25 @@
 // First-page animations
 
-const nameContainer = document.getElementById('name-container');
-const nameContainerRect = nameContainer.getBoundingClientRect();
-const breakPoint = nameContainerRect.top - 60;
+let nameContainer;
+let nameContainerRect;
+const breakPoint = 0;
 
-document.addEventListener('scroll', () => {
+document.addEventListener('scroll', scroll);
+
+function scroll() {
+
+    nameContainer = document.getElementById('name-container');
+    nameContainerRect = nameContainer.getBoundingClientRect();
+
+
     let scrollDist = document.documentElement.scrollTop;
-    console.log(scrollDist);
+    let sectionHeight = document.querySelector('#welcome-section').clientHeight;
+
     if (scrollDist >= breakPoint) {
         nameContainer.style.transform = `translateX(-${scrollDist-breakPoint}px)`;
+      
     }
-
-});
-
+}
 
 
 
