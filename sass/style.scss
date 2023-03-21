@@ -2,6 +2,7 @@
 @import '_resets';
 @import '_mixins.scss';
 @import '_colors.scss';
+@import '_functions.scss';
 
 
 
@@ -16,6 +17,7 @@ body {
 
 #header {
     position: fixed;
+    z-index: 1;
     top:0;
     width: 100%;
     display:flex;
@@ -48,12 +50,18 @@ body {
 
 
 .section {
-    height: 100vh !important;
+    min-height: 100vh !important;
     padding-top: 50px !important;
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content: center;
+}
+
+.sub-header{
+    z-index: -1;
+    font-size: 5rem;
+    text-align: center;
 }
 
 
@@ -62,7 +70,6 @@ body {
     padding:3rem;
     background-color: $header-color;
     border-radius: 2rem;
-    
 }
 
 #welcome-section #name-container {
@@ -85,9 +92,23 @@ body {
 
 /* information page */
 
+
 #information-section {
     justify-content: space-evenly;
     align-items: baseline;
+
+    .accordion {
+        border-radius: determine-border(-1);
+    }
+
+    .accordion:first-of-type {
+        border-radius: determine-border(1);
+    }
+
+    .accordion:last-of-type {
+        border-radius: determine-border(2);
+    }
+    
 
     .accordion-title {
         font-size: 3rem;
@@ -134,11 +155,6 @@ body {
     align-items: center;
     
 }
-#contact-header {
-    font-size: 5rem;
-    text-align: center;
-}
-
 #contact-section .wide-container {
     width: 100%;
     margin-top: 15rem;

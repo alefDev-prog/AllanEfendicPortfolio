@@ -21,6 +21,7 @@ body {
 /* nav-bar */
 #header {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   display: flex;
@@ -49,12 +50,18 @@ body {
 
 /* main */
 .section {
-  height: 100vh !important;
+  min-height: 100vh !important;
   padding-top: 50px !important;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.sub-header {
+  z-index: -1;
+  font-size: 5rem;
+  text-align: center;
 }
 
 /* welcome page */
@@ -81,6 +88,15 @@ body {
 #information-section {
   justify-content: space-evenly;
   align-items: baseline;
+}
+#information-section .accordion {
+  border-radius: 0;
+}
+#information-section .accordion:first-of-type {
+  border-radius: 2rem 2rem 0 0;
+}
+#information-section .accordion:last-of-type {
+  border-radius: 0 0 2rem 2rem;
 }
 #information-section .accordion-title {
   font-size: 3rem;
@@ -117,11 +133,6 @@ body {
   display: relative;
   justify-content: flex-start;
   align-items: center;
-}
-
-#contact-header {
-  font-size: 5rem;
-  text-align: center;
 }
 
 #contact-section .wide-container {
