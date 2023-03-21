@@ -1,3 +1,21 @@
+// First-page animations
+
+const nameContainer = document.getElementById('name-container');
+const nameContainerRect = nameContainer.getBoundingClientRect();
+const breakPoint = nameContainerRect.top - 60;
+
+document.addEventListener('scroll', () => {
+    let scrollDist = document.documentElement.scrollTop;
+    console.log(scrollDist);
+    if (scrollDist >= breakPoint) {
+        nameContainer.style.transform = `translateX(-${scrollDist-breakPoint}px)`;
+    }
+
+});
+
+
+
+
 // information accordion
 const accordionBtns = document.getElementsByClassName('accordion-title');
 for(btn of accordionBtns) {
@@ -8,7 +26,6 @@ for(btn of accordionBtns) {
         sibling.classList.toggle('active');
     })
 }
-// Functions
 
 
 
@@ -42,13 +59,9 @@ icons.forEach(icon => {
          
         let X = (event.offsetX-icon.clientWidth/2)/2.5;
         let Y = (event.offsetY-icon.clientHeight/2)/2.5;
-        console.log(`X: ${X}`);
-        console.log(`Y: ${Y}`);
         event.target.style.transform = `rotateY(${X}deg) rotateX(${-Y}deg)`;
         event.stopPropagation();
-        
-       console.log(event.target)
-       event.stopPropagation();
+    
     
     },);
 });
