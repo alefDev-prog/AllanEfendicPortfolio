@@ -1,22 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-*, ::before, ::after {
-    margin:0;
-    padding:0;
-}
+@import '_resets';
 
 :root {
     --blue-color: rgb(46, 95, 229);
     --header-color: rgb(23, 24, 23);
 }
 
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    scroll-behavior: smooth;
-}
 
 body {
     width: 100%;

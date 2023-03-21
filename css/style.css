@@ -4,17 +4,17 @@
   padding: 0;
 }
 
-:root {
-  --blue-color: rgb(46, 95, 229);
-  --header-color: rgb(23, 24, 23);
-}
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   color: white;
   scroll-behavior: smooth;
+}
+
+:root {
+  --blue-color: rgb(46, 95, 229);
+  --header-color: rgb(23, 24, 23);
 }
 
 body {
