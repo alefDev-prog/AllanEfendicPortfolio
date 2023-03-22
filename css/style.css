@@ -102,12 +102,19 @@ body {
   font-size: 3rem;
   cursor: pointer;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid black;
 }
 #information-section .accordion-title::after {
   content: "+";
   margin-left: 4rem;
   cursor: pointer;
+}
+
+.accordion:nth-of-type(1) {
+  border-bottom: 2px solid black;
+}
+
+.accordion:nth-of-type(2) {
+  border-bottom: 2px solid black;
 }
 
 #information-section .accordion-text {

@@ -1,11 +1,11 @@
 @function determine-border-radius($order) {
     @if $order == 1 {
-        @return #{2rem 2rem 0 0}
+        @return #{2rem 2rem 0 0};
     }@else {
         @if $order == 2 {
-            @return #{0 0 2rem 2rem}
+            @return #{0 0 2rem 2rem};
         } @else {
             @return #{0}
         }
     }
-}
+};

@@ -114,7 +114,6 @@ body {
         font-size: 3rem;
         cursor: pointer;
         padding-bottom: 0.5rem;
-        border-bottom: 2px solid black;
 
         &::after {
             content:"+";
@@ -125,6 +124,17 @@ body {
 
 }
 
+//setting border-bottom
+@for $i from 1 to 3 {
+    .accordion:nth-of-type(#{$i}) {
+        @if $i == 3 {
+            border-bottom: #{none};
+        }
+        @else {
+            border-bottom: #{2px solid black};
+        }
+    }
+}
 
 
 #information-section .accordion-text {
