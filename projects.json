@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "name": "Exercise timer",
+            "description": "nuasndansn",
+            "picture": "url",
+            "languages": ["javascript", "CSS", "HTML"],
+            "website":"url",
+            "github":"url"
+        }
+    ]
+}

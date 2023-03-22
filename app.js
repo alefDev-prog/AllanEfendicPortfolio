@@ -7,7 +7,7 @@ const breakPoint = 0;
 document.addEventListener('scroll', scroll);
 
 function scroll() {
-
+    console.log("hej")
     nameContainer = document.getElementById('name-container');
     nameContainerRect = nameContainer.getBoundingClientRect();
 
@@ -101,7 +101,20 @@ icons.forEach(icon => {
         event.target.style.transition = "all 0.5s ease";
         event.target.style.transform = `rotateY(0deg) rotateX(0deg)`;
     })
-})
+});
+
+
+//request from json
+
+const getAll = async () => {
+    const response = await fetch('projects.json');
+    const output = await response.json();
+    
+    console.log(output);
+}
+
+getAll();
+
 
 
 
