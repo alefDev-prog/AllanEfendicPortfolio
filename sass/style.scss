@@ -98,21 +98,23 @@ body {
     align-items: baseline;
 
     .accordion {
-        border-radius: determine-border(-1);
+        border-radius: determine-border-radius(-1);
     }
 
     .accordion:first-of-type {
-        border-radius: determine-border(1);
+        border-radius: determine-border-radius(1);
     }
 
     .accordion:last-of-type {
-        border-radius: determine-border(2);
+        border-radius: determine-border-radius(2);
     }
     
 
     .accordion-title {
         font-size: 3rem;
         cursor: pointer;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid black;
 
         &::after {
             content:"+";

@@ -101,6 +101,8 @@ body {
 #information-section .accordion-title {
   font-size: 3rem;
   cursor: pointer;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid black;
 }
 #information-section .accordion-title::after {
   content: "+";

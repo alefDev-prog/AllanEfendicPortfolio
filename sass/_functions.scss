@@ -1,4 +1,4 @@
-@function determine-border($order) {
+@function determine-border-radius($order) {
     @if $order == 1 {
         @return #{2rem 2rem 0 0}
     }@else {
