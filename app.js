@@ -25,12 +25,26 @@ function scroll() {
 
 // information accordion
 const accordionBtns = document.getElementsByClassName('accordion-title');
+let open = false;
 for(btn of accordionBtns) {
 
-    btn.addEventListener('click', (event) => {
-        const sibling = event.target.nextElementSibling;
-        event.target.classList.toggle('minus');
+    btn.addEventListener('click', (e) => {
+
+        const accordions = document.querySelectorAll(".accordion-text");
+        const sibling = e.target.nextElementSibling;
+        for(accordion of accordions) {
+        
+            if(accordion.classList.contains('active') && !sibling.isSameNode(accordion)) {
+                accordion.classList.remove('active');
+                accordion.previousElementSibling.classList.remove('minus');
+            }
+        }
+
+        
         sibling.classList.toggle('active');
+        e.target.classList.toggle('minus');
+        
+
     })
 }
 
@@ -62,7 +76,7 @@ const icons = document.querySelectorAll(".icon-container");
 
 icons.forEach(icon => {
     icon.addEventListener('mousemove', event => {
-       
+        
          
         let X = (event.offsetX-icon.clientWidth/2)/2.5;
         let Y = (event.offsetY-icon.clientHeight/2)/2.5;
