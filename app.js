@@ -104,16 +104,44 @@ icons.forEach(icon => {
 });
 
 
-//request from json
+//project-section
 
-const getAll = async () => {
-    const response = await fetch('projects.json');
-    const output = await response.json();
-    
-    console.log(output);
+class project {
+    data;
+    id;
+    constructor(data, id) {
+        this.data = data;
+        this.id = id;
+    }
+
+    get data() {
+        return this.data;
+    }
 }
 
-getAll();
+const projectsArr = [];
+const getAll = async () => {
+    const response = await fetch('projects.json', {
+        method:"GET",
+        headers: {
+            'content-type': 'application/json'
+        },
+        mode: 'no-cors'
+    });
+    const output = await response.json();
+    return output;
+}
+
+const organize = async () => {
+    const rawObj = await getAll();
+    console.log(rawObj)
+    rawObj.projects.map((object, index) => projectsArr.push(new project(object, index)))
+    
+}
+
+organize();
+
+
 
 
 
