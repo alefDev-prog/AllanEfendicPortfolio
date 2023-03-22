@@ -60,8 +60,12 @@ body {
 
 .sub-header {
   z-index: -1;
-  font-size: 5rem;
+  font-size: 6.5rem;
   text-align: center;
+}
+
+#about-header {
+  margin-bottom: 2rem;
 }
 
 /* welcome page */
@@ -89,6 +93,11 @@ body {
   justify-content: space-evenly;
   align-items: baseline;
 }
+#information-section article p {
+  text-indent: 1rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
 #information-section .accordion {
   border-radius: 0;
 }
@@ -102,11 +111,14 @@ body {
   font-size: 3rem;
   cursor: pointer;
   padding-bottom: 0.5rem;
+  position: relative;
 }
 #information-section .accordion-title::after {
   content: "+";
   margin-left: 4rem;
   cursor: pointer;
+  position: absolute;
+  right: 0;
 }
 
 .accordion:nth-of-type(1) {
