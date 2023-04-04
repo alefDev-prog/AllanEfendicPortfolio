@@ -120,6 +120,9 @@ class project {
 }
 
 const projectsArr = [];
+
+
+//async stuff
 const getAll = async () => {
     const response = await fetch('projects.json', {
         method:"GET",
@@ -134,7 +137,6 @@ const getAll = async () => {
 
 const organize = async () => {
     const rawObj = await getAll();
-    console.log(rawObj)
     rawObj.projects.map((object, index) => projectsArr.push(new project(object, index)))
     
 }
