@@ -5,16 +5,16 @@
             "description": "This is an english dictionary. It was made using a backend-API from dictionaryapi.dev",
             "picture": "./images/DictionaryPic.png",
             "languages": ["javascript", "SCSS", "HTML"],
-            "website":"url",
-            "github":"url"
+            "website":"https://alefdev-prog.github.io/dictionary/",
+            "github":"https://github.com/alefDev-prog/dictionary"
         },
         {
             "name": "Exercise timer",
             "description": "nuasndansn",
             "picture": "./images/TimerPic.png",
             "languages": ["javascript", "CSS", "HTML"],
-            "website":"url",
-            "github":"url"
+            "website":"https://alefdev-prog.github.io/session_timer/",
+            "github":"https://github.com/alefDev-prog/session_timer"
         },
         {
             "name": "Exercise timer",

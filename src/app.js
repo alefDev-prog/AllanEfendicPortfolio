@@ -176,13 +176,36 @@ const display = async () => {
         article.appendChild(descriptionText);
 
 
-
+        //full description
         descriptionWrapper.appendChild(header);
         descriptionWrapper.appendChild(article);
-        project.appendChild(descriptionWrapper);
         
         
 
+        //buttons for more info
+        const gitBtn = document.createElement('div');
+        const siteBtn = document.createElement('div');
+        gitBtn.classList.add('proj-btn');
+        siteBtn.classList.add('proj-btn');
+        gitBtn.innerText = 'Github';
+        siteBtn.innerText = 'Preview';
+
+        //links
+        siteBtn.addEventListener('click', () => window.open(el.data.website, '_blank').focus());
+        gitBtn.addEventListener('click', () => window.open(el.data.github, '_blank').focus());
+
+        //font-awesome
+        gitBtn.insertAdjacentHTML('beforeend', '<i class="fa-brands fa-github btn-icon"></i>');
+        siteBtn.insertAdjacentHTML('beforeend', '<i class="fa-sharp fa-solid fa-magnifying-glass btn-icon"></i>')
+
+        const btnWrapper = document.createElement('div');
+        btnWrapper.classList.add('btn-wrapper');
+        btnWrapper.append(gitBtn, siteBtn);
+
+
+        //appending
+        descriptionWrapper.appendChild(btnWrapper);
+        project.appendChild(descriptionWrapper);
         container.appendChild(project); 
         
         

@@ -134,6 +134,7 @@ body {
             cursor:pointer;
             position:absolute;
             right:0;
+            color: $blue-color;
         }
     }
 
@@ -171,6 +172,7 @@ body {
 
 #information-section .minus::after{
     content:'-';
+    color: $blue-color;
 }
 
 
