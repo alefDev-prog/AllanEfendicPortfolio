@@ -153,17 +153,38 @@ const display = async () => {
         const project = document.createElement('div');
         project.classList.add('card');
 
+        //picture
         const picWrapper = document.createElement('figure');
-
-
         const pic = document.createElement('img');
         pic.setAttribute("src", el.data.picture);
         pic.setAttribute("alt", "project picture");
-
         picWrapper.appendChild(pic);
         project.appendChild(picWrapper);
+        console.log(project);
 
-        container.appendChild(project);
+
+        //description
+        const descriptionWrapper = document.createElement('div');
+        descriptionWrapper.classList.add("description-wrapper");
+
+        const header = document.createElement('h1');
+        header.innerText = el.data.name;
+
+        const article = document.createElement('article');
+        const descriptionText = document.createElement('p');
+        descriptionText.innerHTML = el.data.description;
+        article.appendChild(descriptionText);
+
+
+
+        descriptionWrapper.appendChild(header);
+        descriptionWrapper.appendChild(article);
+        project.appendChild(descriptionWrapper);
+        
+        
+
+        container.appendChild(project); 
+        
         
         
 

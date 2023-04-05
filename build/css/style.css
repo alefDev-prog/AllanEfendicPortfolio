@@ -18,18 +18,14 @@ html {
   flex-direction: nowrap;
 }
 #projects-section #projects-container {
-  display: flex;
-  flex-direction: column;
-  flex-direction: nowrap;
   width: 80%;
   max-width: 1000px;
-  background-color: blue;
-  justify-content: space-between;
   /*The project-cards*/
 }
 #projects-section #projects-container .card {
   width: 100%;
   background-color: rgb(23, 24, 23);
+  margin-bottom: 3rem;
 }
 #projects-section #projects-container .card figure {
   width: 100%;
@@ -39,6 +35,13 @@ html {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+#projects-section #projects-container .card h1 {
+  text-align: center;
+}
+#projects-section #projects-container .card article {
+  width: 50%;
+  margin: 2rem auto;
 }
 
 body {

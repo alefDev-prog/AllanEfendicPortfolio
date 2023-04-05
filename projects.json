@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "English dictionary",
-            "description": "nuasndansn",
+            "description": "This is an english dictionary. It was made using a backend-API from dictionaryapi.dev",
             "picture": "./images/DictionaryPic.png",
             "languages": ["javascript", "SCSS", "HTML"],
             "website":"url",
@@ -11,7 +11,7 @@
         {
             "name": "Exercise timer",
             "description": "nuasndansn",
-            "picture": "./images/DictionaryPic.png",
+            "picture": "./images/TimerPic.png",
             "languages": ["javascript", "CSS", "HTML"],
             "website":"url",
             "github":"url"
