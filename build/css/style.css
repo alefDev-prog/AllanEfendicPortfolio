@@ -20,7 +20,7 @@ html {
 #projects-section #projects-container {
   display: flex;
   flex-direction: column;
-  flex-direction: wrap;
+  flex-direction: nowrap;
   width: 80%;
   max-width: 1000px;
   background-color: blue;
@@ -28,9 +28,17 @@ html {
   /*The project-cards*/
 }
 #projects-section #projects-container .card {
-  width: 200px;
-  height: 100px;
+  width: 100%;
   background-color: rgb(23, 24, 23);
+}
+#projects-section #projects-container .card figure {
+  width: 100%;
+  height: 100%;
+}
+#projects-section #projects-container .card figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 body {

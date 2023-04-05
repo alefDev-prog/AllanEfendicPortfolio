@@ -6,7 +6,7 @@
 
 
     #projects-container {
-        @include flex(column, wrap);
+        @include flex(column, nowrap);
         width:80%;
         max-width: 1000px;
         background-color: blue;
@@ -15,10 +15,22 @@
 
         /*The project-cards*/
         .card {
-            width:200px;
-            height: 100px;
+            width:100%;
             background-color: $header-color;
+
+            figure {
+                width: 100%;
+                height: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            
         }
+
+
         
     }
 

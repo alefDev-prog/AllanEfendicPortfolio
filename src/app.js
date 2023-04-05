@@ -146,11 +146,28 @@ const display = async () => {
 
     const container = document.querySelector("#projects-container");
 
+    //create cards
     projectsArr.forEach(el => {
+
+
         const project = document.createElement('div');
         project.classList.add('card');
+
+        const picWrapper = document.createElement('figure');
+
+
+        const pic = document.createElement('img');
+        pic.setAttribute("src", el.data.picture);
+        pic.setAttribute("alt", "project picture");
+
+        picWrapper.appendChild(pic);
+        project.appendChild(picWrapper);
+
         container.appendChild(project);
-    })
+        
+        
+
+    });
     
 }
 
