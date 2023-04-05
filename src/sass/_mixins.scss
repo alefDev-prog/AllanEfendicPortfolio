@@ -1,3 +1,9 @@
 @mixin trans-all-ease {
     transition: all 0.5s ease;
 }
+
+@mixin flex($direction, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-direction: $wrap;
+}

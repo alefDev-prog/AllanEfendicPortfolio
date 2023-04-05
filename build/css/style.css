@@ -12,6 +12,27 @@ html {
   scroll-behavior: smooth;
 }
 
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  flex-direction: nowrap;
+}
+#projects-section #projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: wrap;
+  width: 80%;
+  max-width: 1000px;
+  background-color: blue;
+  justify-content: space-between;
+  /*The project-cards*/
+}
+#projects-section #projects-container .card {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(23, 24, 23);
+}
+
 body {
   width: 100%;
   height: 100vh;

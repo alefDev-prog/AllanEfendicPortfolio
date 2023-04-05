@@ -7,7 +7,6 @@ const breakPoint = 0;
 document.addEventListener('scroll', scroll);
 
 function scroll() {
-    console.log("hej")
     nameContainer = document.getElementById('name-container');
     nameContainerRect = nameContainer.getBoundingClientRect();
 
@@ -56,7 +55,6 @@ const hiddenElements = document.querySelectorAll('.hidden');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
-            console.log(entry);
             entry.target.classList.add("show");
         }
         else {
@@ -119,13 +117,14 @@ class project {
     }
 }
 
+
 const projectsArr = [];
 
 
 //async stuff
 const getAll = async () => {
-    const response = await fetch('projects.json', {
-        method:"GET",
+    const response = await fetch('../projects.json', {
+        method:'GET',
         headers: {
             'content-type': 'application/json'
         },
@@ -137,11 +136,28 @@ const getAll = async () => {
 
 const organize = async () => {
     const rawObj = await getAll();
-    rawObj.projects.map((object, index) => projectsArr.push(new project(object, index)))
+    rawObj.projects.map((object, index) => projectsArr.push(new project(object, index)));
+    projectsArr.forEach(el => console.log(el)); 
     
 }
 
-organize();
+const display = async () => {
+    await organize();
+
+    const container = document.querySelector("#projects-container");
+
+    projectsArr.forEach(el => {
+        const project = document.createElement('div');
+        project.classList.add('card');
+        container.appendChild(project);
+        
+    })
+    
+}
+
+display();
+
+
 
 
 
