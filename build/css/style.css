@@ -19,7 +19,7 @@ html {
 }
 #projects-section #projects-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-direction: wrap;
   width: 80%;
   max-width: 1000px;

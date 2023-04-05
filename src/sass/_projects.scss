@@ -6,7 +6,7 @@
 
 
     #projects-container {
-        @include flex(row, wrap);
+        @include flex(column, wrap);
         width:80%;
         max-width: 1000px;
         background-color: blue;

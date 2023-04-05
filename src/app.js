@@ -150,7 +150,6 @@ const display = async () => {
         const project = document.createElement('div');
         project.classList.add('card');
         container.appendChild(project);
-        
     })
     
 }
