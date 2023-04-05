@@ -4,6 +4,7 @@
 @import '_colors.scss';
 @import '_functions.scss';
 @import '_projects.scss';
+@import '_animations.scss';
 
 
 
@@ -212,26 +213,7 @@ body {
     
 }
 
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-    filter: blur(10px);
-    transition: all 1s;
-    
-}
 
-.show {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0%);
-    
-}
-
-@media (prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
 
 
 

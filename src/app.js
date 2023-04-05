@@ -55,6 +55,7 @@ const hiddenElements = document.querySelectorAll('.hidden');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
+
             entry.target.classList.add("show");
         }
         else {
@@ -64,7 +65,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach((element) => observer.observe(element));
-
 
 
 
@@ -151,7 +151,7 @@ const display = async () => {
 
 
         const project = document.createElement('div');
-        project.classList.add('card');
+        project.classList.add('card', 'flipped');
 
         //picture
         const picWrapper = document.createElement('figure');
@@ -160,7 +160,7 @@ const display = async () => {
         pic.setAttribute("alt", "project picture");
         picWrapper.appendChild(pic);
         project.appendChild(picWrapper);
-        console.log(project);
+        
 
 
         //description
@@ -215,7 +215,29 @@ const display = async () => {
     
 }
 
-display();
+const animate =  async () => {
+    await display();
+
+    const flippedElements = document.querySelectorAll(".flipped");
+    const flipObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+               
+                entry.target.classList.add('aligned');
+                //entry.target.classList.remove('flipped');
+            }
+            else {
+                entry.target.classList.remove('aligned');
+            }
+        });
+    });
+
+
+    flippedElements.forEach(el => flipObserver.observe(el));
+}
+
+animate();
+
 
 
 
