@@ -20,14 +20,15 @@ html {
 #projects-section #projects-container {
   margin-top: 8rem;
   width: 60%;
+  min-width: 280px;
   max-width: 1000px;
   /*The project-cards*/
 }
 #projects-section #projects-container .card {
+  font-size: 2rem;
   width: 100%;
   background-color: rgb(23, 24, 23);
   margin-bottom: 3rem;
-  perspective: 50px;
 }
 #projects-section #projects-container .card figure {
   width: 100%;
@@ -39,19 +40,19 @@ html {
   object-fit: contain;
 }
 #projects-section #projects-container .card .description-wrapper {
-  padding: 1rem;
+  padding: 0.1em;
 }
 #projects-section #projects-container .card h1 {
   text-align: center;
   font-size: 3rem;
 }
 #projects-section #projects-container .card article {
-  width: 50%;
-  margin: 2rem auto;
-  font-size: 1.5rem;
+  width: 80%;
+  margin: 1em auto;
+  font-size: 1em;
 }
 #projects-section #projects-container .card .btn-wrapper {
-  margin-top: 5rem;
+  margin-top: 2em;
   display: flex;
   flex-direction: row;
   flex-direction: wrap;
@@ -60,14 +61,14 @@ html {
 #projects-section #projects-container .card .btn-wrapper .proj-btn {
   background-color: rgb(46, 95, 229);
   width: max-content;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 1em;
+  border-radius: 1em;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 0.6em;
 }
 #projects-section #projects-container .card .btn-wrapper .btn-icon {
-  margin-left: 1rem;
-  font-size: 1.5rem;
+  margin-left: 0.5em;
+  font-size: 1.5em;
 }
 
 .hidden {
@@ -99,6 +100,36 @@ html {
   }
   .flipped {
     transform: unset;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sub-header {
+    font-size: 5rem !important;
+  }
+  #information-section {
+    flex-direction: column;
+  }
+  #information-section article, #information-section #accordion-container {
+    margin: auto;
+  }
+  #information-section article {
+    margin-bottom: 5rem;
+  }
+  #projects-section .card {
+    font-size: 0.4rem;
+  }
+  #projects-section .card .description-wrapper h1 {
+    font-size: 1em !important;
+  }
+  #projects-section .card .description-wrapper article {
+    font-size: 0.75em !important;
+  }
+  #contact-section .container {
+    padding: 2em !important;
+  }
+  #contact-section .icon {
+    padding: 0 !important;
+    font-size: 4rem !important;
   }
 }
 body {
@@ -260,7 +291,6 @@ body {
   transform-style: preserve-3d;
   box-shadow: 0px 10px 20px rgb(46, 95, 229);
   transition: all 0.5s ease;
-  border: 10px solid transparent;
 }
 
 #contact-section .wide-container .icon {
