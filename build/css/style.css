@@ -103,6 +103,12 @@ html {
   }
 }
 @media screen and (max-width: 700px) {
+  #nav-bar {
+    width: 100% !important;
+  }
+  #nav-bar ul a {
+    font-size: 1.5rem !important;
+  }
   .sub-header {
     font-size: 5rem !important;
   }
@@ -112,8 +118,8 @@ html {
   #information-section article, #information-section #accordion-container {
     margin: auto;
   }
-  #information-section article {
-    margin-bottom: 5rem;
+  #information-section #about-article {
+    margin-bottom: 2rem;
   }
   #projects-section .card {
     font-size: 0.4rem;
@@ -213,8 +219,10 @@ body {
   justify-content: space-evenly;
   align-items: baseline;
 }
+#information-section article {
+  margin-left: 1rem;
+}
 #information-section article p {
-  text-indent: 1rem;
   font-size: 2rem;
   line-height: 3.5rem;
 }

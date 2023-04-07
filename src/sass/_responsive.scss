@@ -1,7 +1,15 @@
 @media screen and (max-width:700px) {
 
+    #nav-bar {
+        width: 100% !important;
+
+        ul a {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    
     .sub-header {
-        
         font-size: 5rem !important;
     }
 
@@ -11,8 +19,8 @@
         article, #accordion-container {
             margin: auto;
         }
-        article {
-            margin-bottom: 5rem;
+        #about-article {
+           margin-bottom: 2rem;
         }
     }
 
@@ -20,7 +28,7 @@
         .card {
             font-size: 0.4rem;
             .description-wrapper {
-            
+                
             
                 h1 {
                     font-size: 1em !important;
@@ -31,6 +39,7 @@
             }
         }
     }
+
 
     #contact-section {
 
