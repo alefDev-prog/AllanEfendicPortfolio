@@ -84,7 +84,7 @@ html {
 }
 
 .flipped {
-  transform: rotateY(90deg);
+  transform: rotateY(60deg);
   transform-style: preserve-3d;
 }
 
