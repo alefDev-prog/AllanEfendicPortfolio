@@ -130,6 +130,7 @@ const getAll = async () => {
         },
         mode: 'no-cors'
     });
+    console.log(response)
     const output = await response.json();
     return output;
 }
