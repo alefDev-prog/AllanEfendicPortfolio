@@ -123,7 +123,7 @@ const projectsArr = [];
 
 //async stuff
 const getAll = async () => {
-    const response = await fetch('../projects.json', {
+    const response = await fetch('', {
         method:'GET',
         headers: {
             'content-type': 'application/json'
