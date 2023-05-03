@@ -1,9 +1,17 @@
 {
     "projects": [
-        
+
         {
-            "name": "English dictionary",
-            "description": "This is an english dictionary. It was made using a backend-API from dictionaryapi.dev",
+            "name": "Password manager",
+            "description": "A full-stack app which allows the user to log in and store passwords from various accounts. The front-end was done with Next.js and the back-end API was done with Express. A MongoDB database is used to store encrypted versions of the user's passwords.",
+            "picture": "./images/DictionaryPic.png",
+            "languages": ["javascript", "CSS", "HTML"],
+            "website":"https://password-manager-front-end.vercel.app/",
+            "github":"https://github.com/alefDev-prog/password_manager_router"
+        },
+        {
+            "name": "Dictionary",
+            "description": "An online dictionary developed using React. The dictionary uses an existing API from 'dictionaryapi.dev'. The data is getting fetched using 'GET' requests, and it is in JSON format. Once received, the data is reorganized and dynamically rendered to the user.",
             "picture": "./build/images/DictionaryPic.png",
             "languages": ["javascript", "SCSS", "HTML"],
             "website":"https://alefdev-prog.github.io/dictionary/",
@@ -17,13 +25,6 @@
             "website":"https://alefdev-prog.github.io/session_timer/",
             "github":"https://github.com/alefDev-prog/session_timer"
         },
-        {
-            "name": "Exercise timer",
-            "description": "nuasndansn",
-            "picture": "./images/DictionaryPic.png",
-            "languages": ["javascript", "CSS", "HTML"],
-            "website":"url",
-            "github":"url"
-        }
+        
     ]
 }
