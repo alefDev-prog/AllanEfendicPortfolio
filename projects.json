@@ -1,9 +1,10 @@
 {
     "projects": [
+        
         {
             "name": "English dictionary",
             "description": "This is an english dictionary. It was made using a backend-API from dictionaryapi.dev",
-            "picture": "./images/DictionaryPic.png",
+            "picture": "./build/images/DictionaryPic.png",
             "languages": ["javascript", "SCSS", "HTML"],
             "website":"https://alefdev-prog.github.io/dictionary/",
             "github":"https://github.com/alefDev-prog/dictionary"
@@ -11,7 +12,7 @@
         {
             "name": "Exercise timer",
             "description": "nuasndansn",
-            "picture": "./images/TimerPic.png",
+            "picture": "./build/images/TimerPic.png",
             "languages": ["javascript", "CSS", "HTML"],
             "website":"https://alefdev-prog.github.io/session_timer/",
             "github":"https://github.com/alefDev-prog/session_timer"
