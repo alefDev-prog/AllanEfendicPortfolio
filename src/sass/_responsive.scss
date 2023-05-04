@@ -15,12 +15,24 @@
 
     #information-section {
         flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+
+        
+      
         
         article, #accordion-container {
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         #about-article {
-           margin-bottom: 2rem;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+
+        
+           
         }
     }
 

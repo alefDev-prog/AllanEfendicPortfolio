@@ -114,11 +114,16 @@ html {
   }
   #information-section {
     flex-direction: column;
+    align-items: center;
+    justify-content: unset;
   }
   #information-section article, #information-section #accordion-container {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   #information-section #about-article {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2rem;
   }
   #projects-section .card {
