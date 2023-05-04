@@ -18,12 +18,12 @@
             "github":"https://github.com/alefDev-prog/dictionary"
         },
         {
-            "name": "Exercise timer",
-            "description": "nuasndansn",
-            "picture": "./build/images/TimerPic.png",
+            "name": "Sliding-puzzle solver",
+            "description": "A program which can solve slider-puzzles of all dimensions. The program is written in Java and accepts a text file containing the current state of the puzzle you are trying to solve. Using the A* algorithm and priority queues, the program is able to calculate the smallest amount of moves necessary to solve the puzzle. The process of solving is then printed out to the console step by step.",
+            "picture": "./build/images/Sliding.png",
             "languages": ["javascript", "CSS", "HTML"],
-            "website":"https://alefdev-prog.github.io/session_timer/",
-            "github":"https://github.com/alefDev-prog/session_timer"
+            "website":"https://www.youtube.com/watch?v=rQnWL_MJJVg",
+            "github":"https://github.com/alefDev-prog/Java-applications/tree/Java-applications/SliderPuzzleGit"
         }
         
     ]
