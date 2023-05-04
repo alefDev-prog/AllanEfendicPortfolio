@@ -4,7 +4,7 @@
         {
             "name": "Password manager",
             "description": "A full-stack app which allows the user to log in and store passwords from various accounts. The front-end was done with Next.js and the back-end API was done with Express. A MongoDB database is used to store encrypted versions of the user's passwords.",
-            "picture": "./images/DictionaryPic.png",
+            "picture": "./build/images/DictionaryPic.png",
             "languages": ["javascript", "CSS", "HTML"],
             "website":"https://password-manager-front-end.vercel.app/",
             "github":"https://github.com/alefDev-prog/password_manager_router"
