@@ -3,7 +3,7 @@
 
         {
             "name": "Password manager",
-            "description": "A full-stack app which allows the user to log in and store passwords from various accounts. The front-end was done with Next.js and the back-end API was done with Express. A MongoDB database is used to store encrypted versions of the user's passwords. Attention: the back-end API is deployed on Render.com and after 15 minutes of inactivity, the server spins down. Therefore the first request can be really slow. Try reloading the page if stuck on your first Register or Login",
+            "description": "A full-stack app which allows the user to log in and store passwords from various accounts. The front-end was done with Next.js and the back-end API was done with Express. A MongoDB database is used to store encrypted versions of the user's passwords. Attention: the back-end API is deployed on Render.com and after 15 minutes of inactivity, the server spins down. Therefore the first request can be really slow. Try reloading the page if stuck on your first register or login.",
             "picture": "./build/images/Password.png",
             "languages": ["javascript", "CSS", "HTML"],
             "website":"https://password-manager-front-end.vercel.app/",
@@ -19,7 +19,7 @@
         },
         {
             "name": "Sliding-puzzle solver",
-            "description": "A program which can solve slider-puzzles of all dimensions. The program is written in Java and accepts a text file containing the current state of the puzzle you are trying to solve. Using the A* algorithm and priority queues, the program is able to calculate the smallest amount of moves necessary to solve the puzzle. The process of solving is then printed out to the console step by step.",
+            "description": "A program which can solve sliding-puzzles of all dimensions. The program is written in Java and accepts a text file containing the current state of the puzzle you are trying to solve. Using the A* algorithm and priority queues, the program is able to calculate the smallest amount of moves necessary to solve the puzzle. The process of solving is then printed out to the console step by step.",
             "picture": "./build/images/Sliding.png",
             "languages": ["javascript", "CSS", "HTML"],
             "website":"https://www.youtube.com/watch?v=rQnWL_MJJVg",
