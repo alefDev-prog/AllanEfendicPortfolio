@@ -52,7 +52,7 @@ body {
 
 
 .section {
-    min-height: 100vh !important;
+    min-height: 100vh;
     padding-top: 50px !important;
     display: flex;
     flex-direction: row;
@@ -182,7 +182,7 @@ body {
 #contact-section {
     flex-direction: column;
     display: relative;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     
 }

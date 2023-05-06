@@ -25,11 +25,28 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        #accordion-container {
+            .accordion-title {
+                font-size: 2rem;
+            }
+            article {
+              
+                p {
+                    font-size: 1.5rem
+                }
+            }
+        }
         #about-article {
 
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 2rem;
+
+            p {
+                line-height: 2.5rem;
+                font-size: 1.5rem;
+            }
 
         
            
@@ -63,5 +80,49 @@
             padding: 0 !important;
             font-size: 4rem !important;
         }
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #projects-section {
+        .card {
+            font-size: 0.4rem;
+            .description-wrapper {
+                
+            
+                h1 {
+                    font-size: 1em !important;
+                }
+                article {
+                    font-size: 0.5em !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #information-section {
+        
+        #about-article {
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+
+            p {
+                font-size: 1.1rem;
+            }
+
+        
+           
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (min-height: 800px){
+    #projects-section {
+        margin-top: -30%;
     }
 }

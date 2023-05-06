@@ -124,7 +124,7 @@ const projectsArr = [];
 //async stuff
 const getAll = async () => {
     
-    const response = await fetch('https://alefdev-prog.github.io/AllanEfendicPortfolio.github.io/projects.json', {
+    const response = await fetch('projects.json', {
         method:'GET',
         headers: {
             'content-type': 'application/json'
