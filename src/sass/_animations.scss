@@ -13,18 +13,7 @@
     
 }
 
-.flipped {
-    transform: rotateY(60deg);
-    
-    transform-style: preserve-3d;
-    
-}
 
-.aligned {
-    transform: rotateY(0deg);
-    
-    transition: all 1s ease-in-out;
-}
 
 @media (prefers-reduced-motion) {
     .hidden {

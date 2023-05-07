@@ -88,6 +88,7 @@ icons.forEach(icon => {
 //mouse enters
 icons.forEach(icon => {
     icon.addEventListener('mouseenter', event => {
+        
         event.target.style.transition = "none";
     })
 })
@@ -97,7 +98,11 @@ icons.forEach(icon => {
 icons.forEach(icon => {
     icon.addEventListener('mouseleave', event => {
         event.target.style.transition = "all 0.5s ease";
-        event.target.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        setTimeout(()=> {
+            
+            event.target.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        }, 100);
+        
     })
 });
 
