@@ -70,6 +70,7 @@ hiddenElements.forEach((element) => observer.observe(element));
 
 // 3d animations for icons 
 
+/*
 const icons = document.querySelectorAll(".icon-container");
 
 icons.forEach(icon => {
@@ -106,6 +107,7 @@ icons.forEach(icon => {
     })
 });
 
+*/
 
 //project-section
 
