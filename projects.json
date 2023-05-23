@@ -1,6 +1,15 @@
 {
     "projects": [
 
+
+        {
+            "name": "Screenshot",
+            "description": "An app which lets the user modify images by rescaling them, adding padding or adding a background. This is an open source project I have been contributing to. I have added several important features such as the scaling and the ability to change the position of the image. I have also helped solve problems with unnecessary re-rendering, something which drastically improved the UX. Another feature I implemented was the “toast-messages” the user gets on copying images to the frame.",
+            "picture": "./build/images/Password.png",
+            "languages": ["javascript", "CSS", "HTML"],
+            "website":"https://screenshot-ekqt.vercel.app/",
+            "github":"https://github.com/ekqt/screenshot"
+        }
         {
             "name": "Password manager",
             "description": "A full-stack app which allows the user to log in and store passwords from various accounts. The front-end was done with Next.js and the back-end API was done with Express. A MongoDB database is used to store encrypted versions of the user's passwords. Attention: the back-end API is deployed on Render.com and after 15 minutes of inactivity, the server spins down. Therefore the first request can be really slow. Try reloading the page if stuck on your first register or login.",
