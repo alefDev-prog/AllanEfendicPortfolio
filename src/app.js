@@ -224,36 +224,4 @@ const display = async () => {
     
 }
 
-const animate =  async () => {
-    await display();
-
-    const flippedElements = document.querySelectorAll(".flipped");
-    const flipObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-               
-                entry.target.classList.add('aligned');
-                //entry.target.classList.remove('flipped');
-            }
-            else {
-                entry.target.classList.remove('aligned');
-            }
-        });
-    });
-
-
-    flippedElements.forEach(el => flipObserver.observe(el));
-}
-
-animate();
-
-
-
-
-
-
-
-
-
-
-
+display()
