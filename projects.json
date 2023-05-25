@@ -4,11 +4,11 @@
 
         {
             "name": "Screenshot (open-source)",
-            "description": "An app which lets the user modify images by rescaling them, adding padding or adding a background. This is an open source project I have been contributing to. I have added several important features such as the scaling and the ability to change the position of the image. I have also helped solve problems with unnecessary re-rendering, something which drastically improved the UX. Another feature I implemented was the “toast-messages” the user gets on copying images to the frame.",
+            "description": "Screenshot is an open-source tool that provides users with granular controls to frame their screenshots and offers options to customize settings such as aspect ratio, padding, inset color, inset padding, and frame background. To use Screenshot, click on the frame to paste your clipboard's image and then adjust the settings as needed. This app was built with Next.js, Typescript and Tailwind CSS.",
             "picture": "./build/images/Screenshot.png",
             "languages": ["javascript", "CSS", "HTML"],
-            "website":"https://screenshot-ekqt.vercel.app/",
-            "github":"https://github.com/ekqt/screenshot"
+            "website":"https://usescreenshot.app",
+            "github":"https://usescreenshot.app/github"
         },
         {
             "name": "Password manager",
